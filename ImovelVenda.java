@@ -37,14 +37,14 @@ class ImovelVenda extends Imovel{
     }
 
     public float calcular_iptu(float fator){
-        return fator * this.get_area() + valor_venda * 0.05f;
+        return (fator * this.get_area()) + (valor_venda * 0.05f);
     }
 
     public float calcular_venda(){
-        return valor_venda - valor_desconto;
+        return this.valor_venda - this.valor_desconto;
     }
     public float calcular_itbi(float taxa){
-        return taxa / valor_venda;
+        return this.valor_venda / taxa;
     }
 
     // gets & sets

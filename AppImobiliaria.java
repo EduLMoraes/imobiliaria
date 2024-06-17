@@ -29,7 +29,7 @@ public class AppImobiliaria{
             "RS",
             230000f,
             5f,
-            360f
+            68f
         );
 
         Scanner scan = new Scanner(System.in);
@@ -54,5 +54,7 @@ public class AppImobiliaria{
         System.out.println(":Valor do ITBI...............:"+ i2.calcular_itbi(itbi_tax) + ":");
         System.out.println(":Valor de aluguel............:"+ i1.get_valor_aluguel() + ":");
         System.out.println(":Valor devido a atraso.......:"+ Financeiro.calcular_acrescimo(i1.get_valor_aluguel(), i1.get_caucao()) + ":");
+
+        scan.close();
     }
 }
